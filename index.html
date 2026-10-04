@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pizzas artesanais assadas no forno a lenha. Peça pelo WhatsApp com a ajuda do nosso assistente.">
+    <meta name="theme-color" content="#171512">
+    <title>Fogo da Lenha — Pizza boa pede companhia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="Fogo da Lenha, início">
+            <span class="brand-mark" aria-hidden="true">F</span>
+            <span>FOGO <span class="brand-light">DA LENHA</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Navegação principal">
+            <a href="#cardapio">Cardápio</a>
+            <a href="#bebidas">Bebidas</a>
+            <a href="#sobre">Nossa casa</a>
+            <a href="#contato">Contato</a>
+            <a class="nav-cta" href="#pedir">Pedir agora <span aria-hidden="true">↗</span></a>
+        </nav>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="eyebrow-dot"></span> PIZZA ARTESANAL • FEITA NA HORA</p>
+                <h1>O sabor que<br>acende a <span>noite.</span></h1>
+                <p class="hero-description">Massa de fermentação lenta, ingredientes frescos e aquele toque inconfundível do forno a lenha.</p>
+                <div class="hero-actions" id="pedir">
+                    <a class="button button-primary" href="#cardapio">Escolher minha pizza <span aria-hidden="true">→</span></a>
+                    <span class="delivery-note"><span aria-hidden="true">◷</span> Consulte o prazo de entrega</span>
+                </div>
+                <div class="social-proof">
+                    <span class="social-icon" aria-hidden="true">✳</span>
+                    <p><strong>Feita na hora</strong><br><span>com ingredientes selecionados</span></p>
+                </div>
+            </div>
+            <div class="hero-art" role="img" aria-label="Pizza artesanal saindo do forno a lenha">
+                <div class="hero-ring"></div>
+                <div class="hero-pizza">🍕</div>
+                <div class="floating-note"><span>🔥</span><span>Feita na hora<br><strong>com carinho</strong></span></div>
+                <span class="hero-spark spark-one">✳</span>
+                <span class="hero-spark spark-two">✦</span>
+            </div>
+            <a class="scroll-cue" href="#cardapio"><span></span> DESCUBRA O CARDÁPIO</a>
+        </section>
+
+        <section class="menu-section" id="cardapio">
+            <div class="section-heading">
+                <div><p class="eyebrow">FEITAS PARA COMPARTILHAR</p><h2>As queridinhas<br>da casa<span>.</span></h2></div>
+                <p>Receitas que começam com ingredientes de verdade e terminam com todo mundo pedindo mais.</p>
+            </div>
+            <div class="menu-grid">
+                <article class="pizza-card">
+                    <div class="pizza-image pizza-image-one"><span class="pizza-emoji" aria-hidden="true">🍕</span><span class="popular-tag">A MAIS PEDIDA</span></div>
+                    <div class="pizza-info"><div><h3>Calabresa da Casa</h3><p>Calabresa artesanal, cebola roxa e muçarela.</p></div><span class="price">R$ 49</span></div>
+                    <button class="add-pizza" type="button" data-product="Calabresa da Casa">Quero essa <span aria-hidden="true">+</span></button>
+                </article>
+                <article class="pizza-card">
+                    <div class="pizza-image pizza-image-two"><span class="pizza-emoji" aria-hidden="true">🍕</span></div>
+                    <div class="pizza-info"><div><h3>Margherita Fresca</h3><p>Tomate italiano, manjericão e muçarela.</p></div><span class="price">R$ 46</span></div>
+                    <button class="add-pizza" type="button" data-product="Margherita Fresca">Quero essa <span aria-hidden="true">+</span></button>
+                </article>
+                <article class="pizza-card">
+                    <div class="pizza-image pizza-image-three"><span class="pizza-emoji" aria-hidden="true">🍕</span><span class="veggie-tag">SEM CARNE</span></div>
+                    <div class="pizza-info"><div><h3>Quatro Queijos</h3><p>Muçarela, gorgonzola, parmesão e catupiry.</p></div><span class="price">R$ 52</span></div>
+                    <button class="add-pizza" type="button" data-product="Quatro Queijos">Quero essa <span aria-hidden="true">+</span></button>
+                </article>
+                <article class="pizza-card">
+                    <div class="pizza-image pizza-image-two"><span class="pizza-emoji" aria-hidden="true">🍕</span></div>
+                    <div class="pizza-info"><div><h3>Portuguesa</h3><p>Presunto, ovos, cebola, azeitonas e muçarela.</p></div><span class="price">R$ 54</span></div>
+                    <button class="add-pizza" type="button" data-product="Portuguesa">Quero essa <span aria-hidden="true">+</span></button>
+                </article>
+                <article class="pizza-card">
+                    <div class="pizza-image pizza-image-three"><span class="pizza-emoji" aria-hidden="true">🍕</span></div>
+                    <div class="pizza-info"><div><h3>Frango com Catupiry</h3><p>Frango temperado, catupiry e muçarela.</p></div><span class="price">R$ 53</span></div>
+                    <button class="add-pizza" type="button" data-product="Frango com Catupiry">Quero essa <span aria-hidden="true">+</span></button>
+                </article>
+                <article class="pizza-card">
+                    <div class="pizza-image pizza-image-one"><span class="pizza-emoji" aria-hidden="true">🍕</span></div>
+                    <div class="pizza-info"><div><h3>Pepperoni</h3><p>Pepperoni fatiado, muçarela e molho da casa.</p></div><span class="price">R$ 55</span></div>
+                    <button class="add-pizza" type="button" data-product="Pepperoni">Quero essa <span aria-hidden="true">+</span></button>
+                </article>
+            </div>
+            <p class="menu-footnote">Cardápio e preços ilustrativos: personalize antes de publicar <span>·</span> Consulte disponibilidade no atendimento</p>
+        </section>
+
+        <section class="menu-section drinks-section" id="bebidas">
+            <div class="section-heading">
+                <div><p class="eyebrow">PARA ACOMPANHAR</p><h2>Bebidas<br>geladinhas<span>.</span></h2></div>
+                <p>Complete seu pedido com uma bebida para compartilhar ou curtir sozinho.</p>
+            </div>
+            <div class="menu-grid drinks-grid">
+                <article class="pizza-card drink-card">
+                    <div class="pizza-image"><span class="pizza-emoji" aria-hidden="true">🥤</span></div>
+                    <div class="pizza-info"><div><h3>Refrigerante lata</h3><p>Consulte os sabores disponíveis.</p></div><span class="price">R$ 7</span></div>
+                    <button class="add-pizza" type="button" data-product="Refrigerante lata">Quero essa <span aria-hidden="true">+</span></button>
+                </article>
+                <article class="pizza-card drink-card">
+                    <div class="pizza-image pizza-image-two"><span class="pizza-emoji" aria-hidden="true">🧃</span></div>
+                    <div class="pizza-info"><div><h3>Suco</h3><p>Consulte os sabores disponíveis.</p></div><span class="price">R$ 9</span></div>
+                    <button class="add-pizza" type="button" data-product="Suco">Quero essa <span aria-hidden="true">+</span></button>
+                </article>
+                <article class="pizza-card drink-card">
+                    <div class="pizza-image pizza-image-three"><span class="pizza-emoji" aria-hidden="true">💧</span></div>
+                    <div class="pizza-info"><div><h3>Água mineral</h3><p>Com ou sem gás.</p></div><span class="price">R$ 5</span></div>
+                    <button class="add-pizza" type="button" data-product="Água mineral">Quero essa <span aria-hidden="true">+</span></button>
+                </article>
+                <article class="pizza-card drink-card">
+                    <div class="pizza-image pizza-image-one"><span class="pizza-emoji" aria-hidden="true">🥤</span></div>
+                    <div class="pizza-info"><div><h3>Refrigerante 2 L</h3><p>Ideal para dividir com a família.</p></div><span class="price">R$ 14</span></div>
+                    <button class="add-pizza" type="button" data-product="Refrigerante 2 L">Quero essa <span aria-hidden="true">+</span></button>
+                </article>
+            </div>
+            <p class="menu-footnote">Bebidas e preços ilustrativos: confirme opções e valores pelo WhatsApp.</p>
+        </section>
+
+        <section class="story-section" id="sobre">
+            <div class="story-art" aria-hidden="true"><span>🔥</span><div>CALOR DE<br>VERDADE</div></div>
+            <div class="story-copy"><p class="eyebrow">UM POUCO DA NOSSA HISTÓRIA</p><h2>O segredo está<br>no <span>cuidado.</span></h2><p>Ingredientes selecionados, forno a lenha e cada pizza preparada na hora. Um sabor especial para deixar qualquer encontro mais gostoso.</p><a href="#cardapio" class="text-link">Sinta esse sabor <span aria-hidden="true">→</span></a></div>
+        </section>
+
+        <section class="closing-banner" id="contato">
+            <div><p class="eyebrow">A FOME NÃO ESPERA</p><h2>Sua próxima pizza<br>está a um clique.</h2></div>
+            <a class="button button-primary" href="https://wa.me/556191417800" target="_blank" rel="noopener noreferrer">Fale com a gente no WhatsApp <span aria-hidden="true">↗</span></a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true">F</span><span>FOGO <span class="brand-light">DA LENHA</span></span></a>
+        <p>Pedidos e informações pelo <a href="https://wa.me/556191417800" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
+        <p>Feito com fogo e carinho <span class="footer-heart">♥</span></p>
+    </footer>
+
+    <button class="chat-launcher" type="button" aria-label="Abrir assistente de pedidos" aria-expanded="false">
+        <span class="launcher-icon" aria-hidden="true">✦</span><span class="launcher-label">Posso te ajudar?</span>
+    </button>
+
+    <section class="chat-panel" aria-label="Assistente de pedidos" aria-hidden="true">
+        <div class="chat-header">
+            <div class="bot-avatar" aria-hidden="true">F</div>
+            <div class="chat-heading"><strong>Assistente Fogo da Lenha</strong><span><i></i> Online para ajudar</span></div>
+            <button class="chat-close" type="button" aria-label="Fechar conversa">×</button>
+        </div>
+        <div class="chat-messages" aria-live="polite" aria-relevant="additions text">
+            <div class="message bot-message"><p>Oi! 👋 Que bom ter você por aqui. Está pensando em qual pizza hoje?</p><time>Agora</time></div>
+        </div>
+        <div class="quick-replies">
+            <button type="button" data-message="Quais são as pizzas mais pedidas?">🍕 Ver cardápio</button>
+            <button type="button" data-message="Qual pizza você recomenda?">✨ Me recomenda</button>
+            <button type="button" data-message="Quanto tempo demora a entrega?">🛵 Entrega</button>
+        </div>
+        <form class="chat-form">
+            <label class="visually-hidden" for="chat-input">Escreva sua mensagem</label>
+            <input id="chat-input" name="message" type="text" placeholder="Escreva sua mensagem..." autocomplete="off" maxlength="300" required>
+            <button type="submit" aria-label="Enviar mensagem">↑</button>
+        </form>
+        <p class="chat-disclaimer">Demonstração • O pedido é enviado para confirmação no WhatsApp</p>
+    </section>
+</body>
+</html>
